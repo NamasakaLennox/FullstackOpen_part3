@@ -32,6 +32,10 @@ app.get("/", (request, response) => {
   );
 });
 
+app.get("/info", (request, response) => {
+  response.send("Phonebook has info for ... people <br></br> blaaah"); //starting point tomorrow
+});
+
 app.get("/api/persons", (request, response) => {
   response.json(persons);
 });
